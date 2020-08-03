@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#$ -N 2D_cylinder_1xSize # job name
+#$ -N cylinder-2D_1xSize # job name
 #$ -V           # use all shell environment variables
 #$ -cwd         # run job in working directory
 # #$ -j y         # merge stdout and stderr to one file
@@ -14,7 +14,7 @@
 # Check options with "qconf -spl"
 # Check details with "qconf -sp <pe-name>"
 #$ -pe mpi 16       # asks for n processors for an mpi job
-#$ -l h_vmem=4G     # asks for n Gb of memory
+#$ -l h_vmem=3G     # asks for n Gb of memory
 # Send mail at submission and completion of script
 #$ -m be
 #$ -M p.sinclair@ed.ac.uk

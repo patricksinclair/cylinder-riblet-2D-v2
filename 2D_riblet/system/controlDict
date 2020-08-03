@@ -15,7 +15,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 //use this lib for dynamic mesh refinement in 2D
-//libs ("libdynamicRefine2D.so");
+libs ("libdynamicRefine2D.so");
 
 application     interFoam;
 

@@ -30,7 +30,7 @@ fluid
 {
     //now represents water
     transportModel  Newtonian;
-    nu              1e-06;
+    nu              1e1;
     rho             1000;
 }
 
