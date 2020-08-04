@@ -10,11 +10,44 @@ FoamFile
     version     2.0;
     format      ascii;
     class       volScalarField;
+    location    "0";
     object      p_rgh;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
-#includeIfPresent "../parameters.dat"
-dimensions      [1 -1 -2 0 0 0 0];
+
+u_max           0.2;
+
+sigma           0.001;
+
+bf_thickness    4.2e-05;
+
+bf_length       0.0005;
+
+d_92_params
+{
+    ribletX_nC      8;
+    plateauX_nC     4;
+    surfaceY_nC     6;
+    fluidY_nC       10;
+}
+
+d_46_params
+{
+    ribletX_nC      5;
+    plateauX_nC     3;
+    surfaceY_nC     6;
+    fluidY_nC       10;
+}
+
+d_23_params
+{
+    ribletX_nC      4;
+    plateauX_nC     2;
+    surfaceY_nC     6;
+    fluidY_nC       10;
+}
+
+dimensions      [ 1 -1 -2 0 0 0 0 ];
 
 internalField   uniform 0;
 
@@ -24,27 +57,24 @@ boundaryField
     {
         type            zeroGradient;
     }
-
     rightWall
     {
         type            fixedValue;
         value           uniform 0;
     }
-
     lowerWall
     {
         type            zeroGradient;
     }
-
     upperWall
     {
         type            zeroGradient;
     }
-
     defaultFaces
     {
         type            empty;
     }
 }
+
 
 // ************************************************************************* //

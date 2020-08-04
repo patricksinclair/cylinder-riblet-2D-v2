@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#$ -N cylinder-2D_1xSize # job name
+#$ -N cylinder-2D_4xRefinement # job name
 #$ -V           # use all shell environment variables
 #$ -cwd         # run job in working directory
 # #$ -j y         # merge stdout and stderr to one file

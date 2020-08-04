@@ -18,12 +18,17 @@ FoamFile
 
 convertToMeters 1e-4;
 
-//1x size params
-surfaceX_nc 36;
-arcX_nc 10;
-upperY_nc 10;
-arcY_nc 12;
+//1x refinement params
+// surfaceX_nc 36;
+// arcX_nc 10;
+// upperY_nc 6;
+// arcY_nc 12;
 
+//3x refinement params
+surfaceX_nc 144;
+arcX_nc 40;
+upperY_nc 24;
+arcY_nc 48;
 
 vertices
 (

@@ -19,13 +19,13 @@ libs ("libdynamicRefine2D.so");
 
 application     interFoam;
 
-startFrom       startTime;
+startFrom       latestTime;
 
 startTime       0;
 
 stopAt          endTime;
 
-endTime         14;
+endTime         4;
 
 deltaT          0.01;
 
@@ -35,7 +35,7 @@ writeInterval   0.4;
 
 purgeWrite      0;
 
-writeFormat     binary;
+writeFormat     ascii;
 
 writePrecision  6;
 
