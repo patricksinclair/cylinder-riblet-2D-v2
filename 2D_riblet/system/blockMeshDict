@@ -24,10 +24,18 @@ convertToMeters 1e-4;
 // upperY_nc 6;
 // arcY_nc 12;
 
-//3x refinement params
-surfaceX_nc 144;
+//4x refinement params
+// surfaceX_nc 144;
+// arcX_nc 40;
+// upperY_nc 24;
+// arcY_nc 48;
+
+//4.5x refinement params
+//these aren't strictly 4.5x refinement, they're more eyeballed to produce a very fine mesh
+//that's nice and uniform
+surfaceX_nc 220;
 arcX_nc 40;
-upperY_nc 24;
+upperY_nc 20;
 arcY_nc 48;
 
 vertices
